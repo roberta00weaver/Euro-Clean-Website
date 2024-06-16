@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header .logo {
+    width: 280px; /* Adjust as necessary */
+}
+
+nav {
+    background-color: darkgreen;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block; /* Change from inline to inline-block */
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: forestgreen;
+}
+
+section {
+    padding: 2em;
+    margin: 1em;
+}
+
+section#services {
+    max-width: 55%;
+    margin: 0 auto;
+}
+
+section li {
+    margin-top: 1em;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 1 1 45%;
+    margin: 1em;
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 40%;
+    height: auto;
+    margin-left: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5em 0 0.2em;
+}
+
+form input, form textarea, form button {
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    position: relative; /* Changed from fixed to relative */
+}
+
+/* Media Query for phone screens */
+@media (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav li {
+        display: block;
+        margin: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid white;
+    }
+
+    section#services {
+        width: 100%;
+        margin: 0 auto; /* Center the section */
+    }
+
+    .gallery-item {
+        flex: 1 1 100%;
+        margin: 1em 0;
+    }
+
+    .gallery-item img {
+        max-width: 80%;
+        margin-left: 0;
+    }
+}
